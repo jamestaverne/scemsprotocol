@@ -1,13 +1,41 @@
-# scemsprotocol
-a web app version of the SCEMS protocol + tools to memorize it
+# Website
 
-# Roadmap
-- deploy a basic web app without any content
-- set up Google Firebase hosting
-- connect to domain
-- add PWA functionality
-- add some content from the EMS Protocol
-- add blog functionality
-- add old Monday Minutes to blog posts
-- automate posting Monday Minutes from emails
-- add Algolia search
+This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+
+## Installation
+
+```bash
+yarn
+```
+
+## Local Development
+
+```bash
+yarn start
+```
+
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+
+## Build
+
+```bash
+yarn build
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+## Deployment
+
+Using SSH:
+
+```bash
+USE_SSH=true yarn deploy
+```
+
+Not using SSH:
+
+```bash
+GIT_USER=<Your GitHub username> yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
